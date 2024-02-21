@@ -881,13 +881,7 @@ Write-Output "#### AIB Related Entries ####"
 New-Item -Path "HKLM:\Software\Microsoft\DesiredStateConfiguration"
 New-ItemProperty -Path "HKLM:\Software\Microsoft\DesiredStateConfiguration" -Name "AgentId" -PropertyType STRING -Force
 
-#MOVED this section
-#### Tidy up the binaries and other installation artifacts ####
 
-<#
-Write-Output "#### Tidy Up Installation Directory ####"
-Remove-Item -Path "C:\\temp" -recurse -Force
-#>
 
 #### Removing local drives as the last step
 
