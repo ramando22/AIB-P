@@ -39,7 +39,7 @@ $W10PSScriptName = $W10PSScript.FullName
 
 echo $W10PSScriptName
 
-$p = Start-Process """C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe""" -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""C:\temp\binaries\W10_Language_Pack_ENGB\W10_AVD_ENGB_05112021\Install_LanguagePack.ps1""' -wait -RedirectStandardOutput "C:\Temp\binaries\W10_Language_Pack_ENGB\W10_AVD_ENGB_05112021\stdout.txt"
+$p = Start-Process """C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe""" -ArgumentList '-NoProfile -ExecutionPolicy Bypass -File ""C:\temp\binaries\software\W10_Language_Pack_ENGB\W10_AVD_ENGB_05112021\Install_LanguagePack.ps1""' -wait -RedirectStandardOutput "C:\Temp\binaries\W10_Language_Pack_ENGB\W10_AVD_ENGB_05112021\stdout.txt"
 
 $stdout = Get-Content "C:\Temp\binaries\W10_Language_Pack_ENGB\W10_AVD_ENGB_05112021\stdout.txt"
 echo $stdout
